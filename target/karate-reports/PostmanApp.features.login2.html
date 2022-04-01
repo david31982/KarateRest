@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>PostmanApp.features.login2</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-03-22 08:35:45 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:5]"><span>[1:5]</span> <span>Crear una cuenta desde el sign up del cliente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">PostmanApp/features/login2.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Login</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:5]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:5]</span>
+                <span class="scenario-name">Crear una cuenta desde el sign up del cliente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>474</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://giphy.com/api/v1/users/login/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">20:35:44.579 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field email = &#39;david31982@hotmail.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">54</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field password = &#39;Novaventa0222&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">419</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">20:35:44.641 request:
+1 &gt; POST https://giphy.com/api/v1/users/login/
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 53
+1 &gt; Host: giphy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+email=david31982%40hotmail.com&amp;password=Novaventa0222
+
+20:35:45.053 response time in milliseconds: 410
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; X-RateLimit-Limit-minute: 15
+1 &lt; X-RateLimit-Remaining-minute: 14
+1 &lt; X-RateLimit-Limit-hour: 1000
+1 &lt; X-RateLimit-Remaining-hour: 996.19111111111
+1 &lt; Server: nginx
+1 &lt; Allow: POST, OPTIONS
+1 &lt; Cache-Control: no-cache, max-age=0, must-revalidate
+1 &lt; X-Kong-Upstream-Latency: 151
+1 &lt; X-Kong-Proxy-Latency: 7
+1 &lt; Via: kong/0.34-1-enterprise-edition, 1.1 varnish, 1.1 varnish
+1 &lt; Accept-Ranges: bytes
+1 &lt; Date: Wed, 23 Mar 2022 01:35:45 GMT
+1 &lt; X-Served-By: cache-iad-kiad7000171-IAD, cache-bog6434-BOG
+1 &lt; X-Cache: MISS, MISS
+1 &lt; X-Cache-Hits: 0, 0
+1 &lt; X-Timer: S1647999345.879003,VS0,VE249
+1 &lt; Vary: Accept-Encoding, X-UA-Device, Fastly-SSL
+1 &lt; Strict-Transport-Security: max-age=15465600
+1 &lt; transfer-encoding: chunked
+1 &lt; Set-Cookie: csrftoken=aF78pIynz1Y5KWGrjxCLyQNYcld5tZBo5rIAG2vzy7TWBN6Sbm8JKDftmmBWkeSa; Max-Age=1679448945000; Expires=Sun, 03 Nov 55241 13:25:45 GMT; Domain=giphy.com; Secure
+1 &lt; Set-Cookie: giphy_session_id=.eJxVzDEOAiEQheG7TG3IyICApb1nIANDZNVAsuxWxrvrJlto_f3vvSDyutS4jjLHSeAMRhtntUM4_FLi_Chtc7lzu3WVe1vmKaktUbsOde1Snpe9_TuoPOp3fTQUgrVkTk5TQp8RWQqhDt6LEU0hB0ye4f0BvYAxvg:1nWpub:CzlmG_Q6mth1uKGRIN7KH0sBZoI; Max-Age=1679535345000; Expires=Sat, 30 Jul 55244 13:25:45 GMT; Domain=giphy.com; Secure
+{&quot;id&quot;:42475270,&quot;username&quot;:&quot;david31982&quot;,&quot;avatar&quot;:&quot;https://media.giphy.com/avatars/default4.gif&quot;,&quot;avatar_url&quot;:&quot;https://media.giphy.com/avatars/default4.gif&quot;,&quot;profile_url&quot;:&quot;https://giphy.com/channel/david31982&quot;,&quot;display_name&quot;:&quot;&quot;,&quot;is_verified&quot;:false,&quot;redirect_url&quot;:&quot;/channel/david31982&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
