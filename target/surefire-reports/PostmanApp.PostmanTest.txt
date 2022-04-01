@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: PostmanApp.PostmanTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.895 s - in PostmanApp.PostmanTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.476 s <<< FAILURE! - in PostmanApp.PostmanTest
+testAll[1][1]  Time elapsed: 2.935 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 401, expected: 200, response time in milliseconds: 1407, url: https://gorest.co.in/public/v2/users, response: 
+{"message":"Authentication failed"}
+classpath:PostmanApp/features/createUser.feature:13
+
