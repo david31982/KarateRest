@@ -1,4 +1,4 @@
-@test
+
 Feature: Crear usuario 
 
 Background: Definir Data
@@ -10,5 +10,5 @@ Scenario: Inscribir un cliente
     Given path 'users' 
     And request usuarioRequestBody    
     When method Post 
-    Then status 200
+    Then status 201
     And match response.status == 'active'

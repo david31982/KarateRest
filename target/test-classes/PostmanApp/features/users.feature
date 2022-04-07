@@ -6,9 +6,13 @@ Background: Definir Data
     * def usuarioRequestBody = read('classpath:PostmanApp/jsonData/CreateUser.json')
 
 
-Scenario: Inscribir un cliente
+Scenario Outline: Inscribir un cliente
     Given path 'users' 
     And request usuarioRequestBody    
     When method Post 
-    Then status 201
+    Then status 200
     And match response.status == 'active'
+
+    Examples: 
+    | nombre | email    | status |  
+    | david  | david    | test   | 

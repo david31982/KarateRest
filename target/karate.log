@@ -1,19 +1,27 @@
-15:31:27.555 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-15:31:28.139 [main] INFO  com.intuit.karate - karate.env system property was: null 
-15:31:28.603 [main] DEBUG com.intuit.karate - request:
+09:41:36.521 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:41:37.066 [main] INFO  com.intuit.karate - karate.env system property was: null 
+09:41:37.437 [main] DEBUG com.intuit.karate - request:
 1 > POST https://gorest.co.in/public/v2/users
+1 > Authorization: Bearer 515affa5e7a547730508144f734fd2bbee8110efa67fb4afbcc1701e59ba3dec
+1 > Accept: application/json;charset=utf-8
 1 > Content-Type: application/json; charset=UTF-8
-1 > Content-Length: 94
+1 > Content-Length: 99
 1 > Host: gorest.co.in
 1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.6)
 1 > Accept-Encoding: gzip,deflate
-{"name":"Tenali Ramakrishna David","gender":"male","email":"david@15ce.com","status":"active"}
+{
+  "name": "Tenali Ramakrishna David",
+  "gender": "male",
+  "email": "davidmunoz@15ce.com",
+  "status": "active"
+}
 
-15:31:30.011 [main] DEBUG com.intuit.karate - response time in milliseconds: 1407
-1 < 401
+
+09:41:39.039 [main] DEBUG com.intuit.karate - response time in milliseconds: 1599
+1 < 201
 1 < Server: nginx
-1 < Date: Fri, 01 Apr 2022 20:31:34 GMT
+1 < Date: Thu, 07 Apr 2022 14:41:39 GMT
 1 < Content-Type: application/json; charset=utf-8
 1 < Transfer-Encoding: chunked
 1 < Connection: keep-alive
@@ -23,15 +31,23 @@
 1 < X-Download-Options: noopen
 1 < X-Permitted-Cross-Domain-Policies: none
 1 < Referrer-Policy: strict-origin-when-cross-origin
-1 < Cache-Control: no-cache
-1 < X-Request-Id: 8a31b792-8f18-4269-8fe4-b89cf7cce073
-1 < X-Runtime: 0.002254
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < Location: https://gorest.co.in/public/v2/users/5598
+1 < ETag: W/"bbe53dcbf8205ec1e598782ae20ebeeb"
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < X-Request-Id: f0cd5b99-6833-473d-bac0-4a2dd3261dc3
+1 < X-Runtime: 0.023072
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 < Vary: Origin
-{"message":"Authentication failed"}
+{
+  "id": 5598,
+  "name": "Tenali Ramakrishna David",
+  "email": "davidmunoz@15ce.com",
+  "gender": "male",
+  "status": "active"
+}
 
-15:31:30.014 [main] ERROR com.intuit.karate - classpath:PostmanApp/features/createUser.feature:13
-Then status 200
-status code was: 401, expected: 200, response time in milliseconds: 1407, url: https://gorest.co.in/public/v2/users, response: 
-{"message":"Authentication failed"}
-classpath:PostmanApp/features/createUser.feature:13
+
+09:41:39.546 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/PostmanApp/features/createUser.feature
