@@ -1,4 +1,4 @@
-
+@regression
 Feature: Buscar usuario
 
   Background: Definir Data

@@ -4,8 +4,6 @@ Feature: Consultar todo los usuarios
 Background: Definir Data
     * url apiUrl
 
-
-
 Scenario: Buscar la cantidad de usuarios
     Given path 'users'
     Given params {page:2}

@@ -27,9 +27,6 @@ Scenario Outline: Inscribir un cliente
      }
     """
 
-
-
-
     Examples:
     | name               | email                   | status   |
     | david munoz Mazo   | david.munozm13@test.com | active   |
