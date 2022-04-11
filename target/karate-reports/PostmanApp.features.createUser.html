@@ -10,7 +10,7 @@
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
     <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>src.test.java.PostmanApp.features.createUser</title>  
+    <title>PostmanApp.features.createUser</title>  
   </head>
   <body>   
     <div id="root-container">
@@ -22,21 +22,21 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-04-07 09:41:39 a. m.</div>
+    <div>2022-04-10 07:50:29 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[1:9]"><span>[1:9]</span> <span>Inscribir un cliente</span></a>
+          <div class="nav-item failed">
+            <a href="#[1.1:35]"><span>[1.1:35]</span> <span>Inscribir un cliente</span></a>
           </div>
         </div>
       </div>
@@ -45,40 +45,40 @@
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">src/test/java/PostmanApp/features/createUser.feature</span><span class="feature-label">|</span>
+          <span class="feature-path">PostmanApp/features/createUser.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Crear usuario</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:9]">
+          <div class="scenario-heading" id="[1.1:35]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:9]</span>
+                Scenario: <span>[1.1:35]</span>
                 <span class="scenario-name">Inscribir un cliente</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1945</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1820</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:9]bg">
+            <div class="step-container" id="[1.1:35]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1.1:35]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.5">
+    <div class="step-container" id="1.5">
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
@@ -94,27 +94,27 @@
 
   
 
-  <div class="preformatted" data-parent="0.5">09:41:37.068 karate.env system property was: null 
+  <div class="preformatted" data-parent="1.5">19:50:27.480 karate.env system property was: null 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:9]bg"><div>
+          <div data-parent="[1.1:35]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
+    <div class="step-container" id="1.6">
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def usuarioRequestBody = read(&#39;classpath:PostmanApp/jsonData/CreateUser.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">45</div>
+    <div class="time-cell passed">35</div>
   </div>
 
    
@@ -135,11 +135,11 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
+    <div class="step-container" id="1.10">
       <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+        <span>*</span>&nbsp;<span>def name = &quot;david munoz Mazo&quot;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -163,117 +163,11 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.11">
+    <div class="step-container" id="1.11">
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request usuarioRequestBody</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method Post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1894</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.12">09:41:37.438 request:
-1 &gt; POST https://gorest.co.in/public/v2/users
-1 &gt; Authorization: Bearer 515affa5e7a547730508144f734fd2bbee8110efa67fb4afbcc1701e59ba3dec
-1 &gt; Accept: application/json;charset=utf-8
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 99
-1 &gt; Host: gorest.co.in
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{
-  &quot;name&quot;: &quot;Tenali Ramakrishna David&quot;,
-  &quot;gender&quot;: &quot;male&quot;,
-  &quot;email&quot;: &quot;davidmunoz@15ce.com&quot;,
-  &quot;status&quot;: &quot;active&quot;
-}
-
-
-09:41:39.039 response time in milliseconds: 1599
-1 &lt; 201
-1 &lt; Server: nginx
-1 &lt; Date: Thu, 07 Apr 2022 14:41:39 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-XSS-Protection: 0
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Download-Options: noopen
-1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; X-RateLimit-Limit: 90
-1 &lt; X-RateLimit-Remaining: 89
-1 &lt; X-RateLimit-Reset: 1
-1 &lt; Location: https://gorest.co.in/public/v2/users/5598
-1 &lt; ETag: W/&quot;bbe53dcbf8205ec1e598782ae20ebeeb&quot;
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; X-Request-Id: f0cd5b99-6833-473d-bac0-4a2dd3261dc3
-1 &lt; X-Runtime: 0.023072
-1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 &lt; Vary: Origin
-{
-  &quot;id&quot;: 5598,
-  &quot;name&quot;: &quot;Tenali Ramakrishna David&quot;,
-  &quot;email&quot;: &quot;davidmunoz@15ce.com&quot;,
-  &quot;gender&quot;: &quot;male&quot;,
-  &quot;status&quot;: &quot;active&quot;
-}
-
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
+        <span>*</span>&nbsp;<span>def email = &quot;david.munozm13@test.com&quot;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -297,19 +191,273 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.status == &#39;active&#39;</span>
+        <span>*</span>&nbsp;<span>def status = &quot;active&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
   
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request usuarioRequestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1783</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">19:50:27.981 request:
+1 &gt; POST https://gorest.co.in/public/v2/users
+1 &gt; Authorization: Bearer 515affa5e7a547730508144f734fd2bbee8110efa67fb4afbcc1701e59ba3dec
+1 &gt; Accept: application/json;charset=utf-8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 95
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+{
+  &quot;name&quot;: &quot;david munoz Mazo&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;email&quot;: &quot;david.munozm13@test.com&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+
+
+19:50:29.323 response time in milliseconds: 1341
+1 &lt; 422
+1 &lt; Server: nginx
+1 &lt; Date: Mon, 11 Apr 2022 00:50:28 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; Cache-Control: no-cache
+1 &lt; X-Request-Id: ff16cd40-4ca9-4ce4-b740-6955e6c4d170
+1 &lt; X-Runtime: 0.017087
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Origin
+[
+  {
+    &quot;field&quot;: &quot;email&quot;,
+    &quot;message&quot;: &quot;has already been taken&quot;
+  }
+]
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">19:50:29.325 classpath:PostmanApp/features/createUser.feature:16
+Then status 201
+status code was: 422, expected: 201, response time in milliseconds: 1341, url: https://gorest.co.in/public/v2/users, response: 
+[{&quot;field&quot;:&quot;email&quot;,&quot;message&quot;:&quot;has already been taken&quot;}]
+classpath:PostmanApp/features/createUser.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.status == &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def idUser = response.id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.19">{
+&quot;id&quot;: &#39;#number&#39;,
+&quot;name&quot;:  &quot;#string&quot;,
+&quot;email&quot;: &quot;#string&quot;,
+&quot;gender&quot;: &quot;#string&quot;,
+&quot;status&quot;: &quot;#string&quot;
+ }</div>
 
   
 

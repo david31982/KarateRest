@@ -1,6 +1,6 @@
 {
-    "name": "Tenali Ramakrishna David",
+    "name": "#(name)",
     "gender": "male",
-    "email": "davidmunoz@15ce.com",
-    "status": "active"
+    "email": "#(email)",
+    "status": "#(status)"
 }

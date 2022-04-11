@@ -1,18 +1,32 @@
 
-Feature: Crear usuario 
+Feature: Consultar todo los usuarios
 
 Background: Definir Data
     * url apiUrl
-    * def usuarioRequestBody = read('classpath:PostmanApp/jsonData/CreateUser.json')
 
 
-Scenario Outline: Inscribir un cliente
-    Given path 'users' 
-    And request usuarioRequestBody    
-    When method Post 
+
+Scenario: Buscar la cantidad de usuarios
+    Given path 'users'
+    Given params {page:2}
+    When method Get
     Then status 200
-    And match response.status == 'active'
+    And match response.[*].status contains 'active'
+    And match response.[0].id == 3020
+    And match response.[0].id == '#number'
+    And match response.[0].status == '#string'
+    And match each response.[*] ==
+    """
+    {
+    "id": '#number',
+    "name":  "#string",
+    "email": "#string",
+    "gender": "#string",
+    "status": "#string"
+     }
+    """
 
-    Examples: 
-    | nombre | email    | status |  
-    | david  | david    | test   | 
+
+
+
+
