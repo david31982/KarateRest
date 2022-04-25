@@ -21,7 +21,6 @@ function fn() {
 
   var accessToken =
     "515affa5e7a547730508144f734fd2bbee8110efa67fb4afbcc1701e59ba3dec";
-
   karate.configure("headers", {
     Authorization: "Bearer " + accessToken,
     Accept: "application/json;charset=utf-8",
