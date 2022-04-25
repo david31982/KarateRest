@@ -1,3 +1,4 @@
+@TestUI
 Feature: Diligenciar el checkout para finalizar la compra
 
 Background: Definicion
