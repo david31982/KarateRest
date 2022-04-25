@@ -10,7 +10,7 @@ function fn() {
   var config = {
     apiUrl: "https://gorest.co.in/public/v2/",
     uiURL: "https://www.saucedemo.com/",
-    mockUrlData:"http://0.0.0.0:3001/"
+    mockUrlData: "http://0.0.0.0:3001/",
   };
 
   if (env == "dev") {

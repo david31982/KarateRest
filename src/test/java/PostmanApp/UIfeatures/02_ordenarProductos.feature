@@ -10,8 +10,7 @@ Scenario: Ordenar Productos Z To A
   Given match text('{}Products') == 'Products'
   #When select("//select[@class='product_sort_container']", 'za' )
   When  mouse().move('{}Name (A to Z)').click()
-  * sleep(t*90)
-  And mouse().move("//option[@value='lohi']").click()
+  And click("//option[@value='lohi']")
   * def texto = text('{}Name (A to Z)')
   * print texto
-* sleep(t*10)
+* sleep(t*90)
