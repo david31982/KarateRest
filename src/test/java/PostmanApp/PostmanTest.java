@@ -13,4 +13,9 @@ public class PostmanTest {
   Karate testTags() {
     return Karate.run().tags("@regression").relativeTo(getClass());
   }
+  @Karate.Test
+  Karate testUITags(){
+    return Karate.run().tags("@TestUI").relativeTo(getClass());
+
+  }
 }

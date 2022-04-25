@@ -1,3 +1,4 @@
+@TestUI
 Feature: Agregar productos al carrito de compra
 
 Background:

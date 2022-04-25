@@ -1,3 +1,4 @@
+@TestUI
 Feature: El usuario realiza la busqueda de
 
 Background:
