@@ -9,6 +9,8 @@ function fn() {
 
   var config = {
     apiUrl: "https://gorest.co.in/public/v2/",
+    uiURL: "https://www.saucedemo.com/",
+    mockUrlData:"http://0.0.0.0:3001/"
   };
 
   if (env == "dev") {
@@ -19,10 +21,12 @@ function fn() {
 
   var accessToken =
     "515affa5e7a547730508144f734fd2bbee8110efa67fb4afbcc1701e59ba3dec";
+
   karate.configure("headers", {
     Authorization: "Bearer " + accessToken,
     Accept: "application/json;charset=utf-8",
   });
+
   karate.configure("logPrettyRequest", true);
   karate.configure("logPrettyResponse", true);
   return config;
