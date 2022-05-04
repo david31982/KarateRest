@@ -1,0 +1,10 @@
+{
+  "simulation": "goRest.performance.TestUserStimulation",
+  "simulationId": "testuserstimulation",
+  "start": 1651531395054,
+  "description": "",
+  "scenarios": ["Create User"],
+  "assertions": [
+
+  ]
+}
